@@ -3,8 +3,7 @@
 # a.get(9).append(123)
 # a.update({9:[12,3,4]})
 # print(a)
-# for harder puzzles might need to brute force???
-# research backtracking algorithm
+# it works!!!!!!!!!
 values = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 # initialize new board
 def createBoard():
@@ -51,7 +50,18 @@ def createBoard():
               [0, 0, 1, 0, 0, 0, 0, 6, 8],
               [0, 0, 8, 5, 0, 0, 0, 1, 0],
               [0, 9, 0, 0, 0, 0, 4, 0, 0]]
-    return board4
+
+
+    board5 = [[0, 0, 4, 0, 0, 8, 0, 0, 7],
+              [0, 1, 0, 0, 4, 0, 0, 6, 0],
+              [7, 0, 0, 6, 0, 0, 4, 0, 0],
+              [3, 0, 0, 2, 0, 0, 6, 0, 0],
+              [0, 7, 0, 0, 9, 0, 0, 8, 0],
+              [0, 0, 9, 0, 0, 7, 0, 0, 1],
+              [0, 0, 8, 0, 0, 1, 0, 0, 6],
+              [0, 3, 0, 0, 5, 0, 0, 4, 0],
+              [9, 0, 0, 3, 0, 0, 7, 0, 0]]
+    return board5
 
 
 # print board
@@ -60,9 +70,9 @@ def printBoard():
     for i in range(len(newBoard)):
         for j in range(len(newBoard[i])):
             if j == 2 or j == 5 or j == 8:
-                print(newBoard[i][j])
+                print(newBoard[i][j],end='|')
             else:
-                print(newBoard[i][j])
+                print(newBoard[i][j],end='|')
         print('')
         if i == 2 or i == 5 or i == 8:
             print("==================")
