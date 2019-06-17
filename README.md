@@ -13,4 +13,4 @@ to run it:
 
 in terminal run:
 
-> python sudoku.py
+> py sudoku.py
